@@ -13,4 +13,6 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
-cp ../openvpn-ssl-Makefile feeds/packages/net/openvpn/Makefile
+cd ..
+mv openvpn-ssl-Makefile openwrt/feeds/packages/net/openvpn/Makefile
+cd openwrt
